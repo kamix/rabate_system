@@ -13,11 +13,13 @@ class CashDeskTest extends \PHPUnit_Framework_TestCase {
     
     public function testUse() {
         
-        $tax8 = new \Shop\Tax(0.8);
-        $product1 = new \Shop\Product(00001111,125.90,130.80,$tax8);
+        $tax8 = new Shop\Tax(0.8);
+        $product1 = new Shop\Product(00001111,125.90,130.80,$tax8);
         
-        $basket = new \Shop\Basket();
+        $basket = new Shop\Basket();
         $basket->addProduct($product1);
+        
+        $condition = new Shop\RabateCondition\AllFromTheListCondition($basket);
         
         $evaluation = $this->cashDesk->evaluateBasket($basket);
         
