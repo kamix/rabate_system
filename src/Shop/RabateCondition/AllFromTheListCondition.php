@@ -17,6 +17,10 @@ class AllFromTheListCondition implements RabateCondition {
     public function getFilteredBasket() {
         
     }
+    
+    public function setRabate(\Shop\Rabate\Rabate $rabate) {
+        
+    }
 
 }
 

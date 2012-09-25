@@ -1,11 +1,15 @@
 Rabate system
 ------------
 
-Here's a numbered list:
+What exactly rabate system is?
+It's the library which can introduce to your application beings like:
+ 1. Basket
+ 2. CashDesk
+ 3. Rabates
+ 4. Tax rates
 
- 1. first item
- 2. second item
- 3. third item
+Rabate system has been written in PHP5.4.
+
 
 Note again how the actual text starts at 4 columns in (4 characters
 from the left side). Here's a code sample:
