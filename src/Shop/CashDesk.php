@@ -15,7 +15,7 @@ class CashDesk {
     /**
      * 
      * @param \Shop\Basket $basket
-     * @return \Shop\CashDesk\Evaluation
+     * @return \Shop\Basket\Evaluation
      */
     public function evaluateBasket(Basket $basket) {
 
@@ -23,7 +23,7 @@ class CashDesk {
             $rabateCondition->evaluate($basket);
         }
 
-        return new \Shop\CashDesk\Evaluation();
+        return new \Shop\Basket\Evaluation();
     }
 
 }

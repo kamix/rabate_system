@@ -1,6 +1,6 @@
 <?php
 
-namespace Shop\CashDesk;
+namespace Shop\Basket;
 
 class Evaluation {
     public function __construct() {

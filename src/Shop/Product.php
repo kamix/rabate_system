@@ -22,6 +22,10 @@ class Product {
         $this->grossPrice = $grossPrice;
         $this->tax = $tax;
     }
+    
+    public function getBarcode() {
+        return $this->barcode;
+    }
 
 }
 

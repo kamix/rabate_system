@@ -13,5 +13,9 @@ class Basket {
     public function addProduct(Product $product) {
         $this->basket[] = $product;
     }
+    
+    public function getProductList() {
+        return $this->basket;
+    }
 }
 
